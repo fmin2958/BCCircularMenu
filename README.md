@@ -1,5 +1,7 @@
 # BCCircularMenu
----
+
+<img src="http://i12.tietuku.com/81464d560d709d7f.png" width = "300" height = "300" alt="BCCircularMenu" align = center />
+
 This is a simple, adaptive circular menu that spreads out on touch and activates upon release with toggling animation for cocoa touch. You can easily arrange them however you want.
 
 ### Features
@@ -10,7 +12,7 @@ This is a simple, adaptive circular menu that spreads out on touch and activates
 
 ### Installation
 ---
-Simply grab the files located in `BCCircularMenu/BCCircularMenu` and put it in your project.
+Simply grab the file `BCCircularMenu/BCCircularMenu/BCCircularMenuView` and put it in your project.
 
 ### Usage
 ---
@@ -85,3 +87,13 @@ Simply grab the files located in `BCCircularMenu/BCCircularMenu` and put it in y
        NSLog(@"button number:%ld is activated",(long)number);
    }
 ```
+
+# Parameters & Initializers
+ Name    | Type    | description
+ ---:   | :---:   | :---
+  size   | doble   | size of each button
+  buttons| array   | where all buttons are stored
+ distance| double  | distance from the touch point to the center of each button
+ spreadTime|float  | how long it takes for button spearding animation
+ triggerTime|float | the minimum time required for a long press event to perform a valid trigger
+ invalidTriggerDistance| CGFloat | the minimum length required to invalidate a trigger
